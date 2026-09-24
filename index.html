@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Pacheco - Java | Spring Boot Developer</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Daniel Pacheco - Técnico Superior en DAM</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -19,9 +19,9 @@
                 <li><a href="#contact">Contacto</a></li>
                 <li><a href="/docs/cv.pdf" target="_blank" class="btn">cv.pdf</a></li>
             </ul>
-            <!-- Botón de menú hamburguesa para versión móvil -->
+            <!-- Hamburger button for mobile version -->
             <button class="hamburger" aria-label="Abrir menú">
-                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon">☰</span>
             </button>
         </nav>
     </header>
@@ -29,22 +29,26 @@
     <main>
         <section id="hero" class="hero-section">
             <div class="hero-container">
-                <div class="status-badge">
-                    <span class="status-dot"></span>
-                    <span>Disponible para trabajar</span>
+                <!-- Column 1: text and buttons -->
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot">·</span>
+                        <span>Disponible para trabajar</span>
+                    </div>
+                    <h1>Hola, soy<span class="name"> Daniel Pacheco</span><span>.</span></h1>
+                    <h2 class="hero-subtitle">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h2>
+                    <p class="hero-description">Especializado en el desarrollo de arquitecturas backend escalables mediante Java y Spring Boot.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">Ver proyectos</a>
+                        <a href="#contact" class="btn">Contactar / CV</a>
+                    </div>
                 </div>
-                <h1>Hola, soy<span class="name"> Daniel Pacheco</span><span>.</span></h1>
-                <h2 class="hero-subtitle">Java | Spring Boot Developer</h2>
-                <p class="hero-description">Especializado en arquitecturas backend escalables, optimización de consultas en bases de datos y orquestación de microservicios eficientes.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn">Ver proyectos</a>
-                    <a href="#contact" class="btn btn-outline">Contactar / CV</a>
-                </div>
-                <!-- Terminal simulada de Linux -->
+
+                <!-- Column 2: Simulated Linux terminal -->
                 <div class="terminal-card linux-term">
                     <div class="terminal-header">
                         <div class="terminal-title">
-                            <span class="terminal-icon">❯_</span> Terminal: daniel@linux-pc:~
+                            <span class="terminal-icon">❯_</span> Terminal: daniel@linux-pc: ~/projects/resto-reserve
                         </div>
                         <div class="terminal-controls">
                             <span class="control minimize">—</span>
@@ -53,11 +57,20 @@
                         </div>
                     </div>
                     <div class="terminal-body">
-                        <pre><code><span class="prompt-user">daniel@linux-pc</span>:<span class="prompt-location">~</span>$ <span class="command">ls -la /proyectos</span>
-drwxr-xr-x 4 daniel daniel 4096 microservices-core/
-drwxr-xr-x 2 daniel daniel 4096 fishing-conditions/
+                        <pre><code><span class="prompt-user">daniel@linux-pc</span>:<span class="prompt-location">~/projects/resto-reserve</span>$ <span class="command">./mvnw spring-boot:run</span>
 
-<span class="prompt-user">daniel@linux-pc</span>:<span class="prompt-location">~</span>$ <span class="command"># Servidor en ejecución</span>_</code></pre>
+<span class="term-cyan">  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/</span>
+<span class="term-green"> :: Spring Boot :: </span>              <span class="term-muted">(v3.2.5)</span>
+
+<span class="term-muted">2026-09-24T10:13:00.124Z  INFO 4092 --- [main] c.d.p.RestoReserveApplication : Starting RestoReserveApplication...</span>
+<span class="term-muted">2026-09-24T10:13:01.850Z  INFO 4092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)</span>
+<span class="term-green">2026-09-24T10:13:02.110Z  INFO 4092 --- [main] c.d.p.RestoReserveApplication : Started RestoReserveApplication in 2.34 seconds (JVM running for 2.8)</span>
+<span class="prompt-user">daniel@linux-pc</span>:<span class="prompt-location">~/projects/resto-reserve</span>$ <span class="command"># Servidor listo en http://localhost:8080</span>_</code></pre>
                     </div>
                 </div>
             </div>
