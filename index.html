@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Pacheco - Técnico Superior en DAM</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
             <a href="#hero" class="logo">dp.<span class="logo-sufix">dev</span> Daniel Pacheco</a>
-            <ul>
+            <ul id="main-menu">
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#stack">Tech stack</a></li>
                 <li><a href="#about">Sobre mí</a></li>
@@ -20,7 +21,7 @@
                 <li><a href="./assets/docs/cv.pdf" target="_blank" class="btn">cv.pdf</a></li>  
             </ul>
             <!-- Hamburger button for mobile version -->
-            <button class="hamburger" aria-label="Abrir menú">
+            <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
                 <span class="hamburger-icon">☰</span>
             </button>
         </nav>
