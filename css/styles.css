@@ -37,11 +37,45 @@ body {
     min-height: 100vh;
 }
 
+.stack-section,
+.projects-section,
+.about-section  {
+    padding: 3rem 1.5rem;
+    background-color: var(--bg-dark);
+}
+
+.project-title,
+.stack-category-title,
+.about-card-title  {
+    font-size: 1.25rem;
+    color: var(--accent-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.project-description,
+.about-description {
+    color: var(--text-muted);
+    margin: 1rem;
+}
+
+.about-card,
+.stack-card,
+.about-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--bg-card-border);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 /* Shared containers */
 
 .hero-container,
 .projects-container,
-.stack-container {
+.stack-container,
+.about-container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -49,7 +83,9 @@ body {
 
 /* Grids */
 
-.projects-grid, .stack-grid {
+.projects-grid, 
+.stack-grid, 
+.about-grid {
     margin-top: 1.5rem;
     gap: 2rem;
 }
@@ -285,11 +321,6 @@ h1 {
 
 /* Project section styles */
 
-.projects-section {
-    padding: 3rem 1.5rem;
-    background-color: var(--bg-dark);
-}
-
 .project-card {
     background-color: var(--bg-card);
     border: 1px solid var(--bg-card-border);
@@ -298,17 +329,6 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-.project-title {
-    font-size: 1.25rem;
-    color: var(--accent-cyan);
-    margin-bottom: 0.5rem;
-}
-
-.project-card p {
-    color: var(--text-muted);
-    margin: 1rem;
 }
 
 .project-tech {
@@ -336,30 +356,9 @@ h1 {
 
 /* Tech stack section styles */
 
-.stack-section {
-    padding: 3rem 1.5rem;
-    background-color: var(--bg-dark);
-}
-
 .stack-grid {
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.stack-card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--bg-card-border);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.stack-category-title {
-    font-size: 1.25rem;
-    color: var(--accent-cyan);
-    margin-bottom: 0.5rem;
 }
 
 .stack-items {
@@ -377,6 +376,12 @@ h1 {
     border: 1px solid var(--bg-card-border);
     border-radius: 0.5rem;
     font-size: 0.75rem;
+}
+
+/* About section styles */ 
+
+.check {
+    color: var(--accent-green)
 }
 
 /* Media queries */
@@ -423,12 +428,13 @@ h1 {
         width: auto;
     }
 
-    .projects-grid {
+    .projects-grid,
+    .about-grid  {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .stack-grid {
+    .stack-grid{
         grid-template-columns: repeat(2, 1fr);
     }
 }
