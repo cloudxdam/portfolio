@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/* colors & typography */
+/* Colors & typography */
 
 :root {
     --bg-dark: #070a12;
@@ -43,6 +43,7 @@ body {
 .contact-section  {
     padding: 3rem 1.5rem;
     background-color: var(--bg-dark);
+    scroll-margin-top: 80px;
 }
 
 .project-title,
@@ -106,7 +107,8 @@ header {
     backdrop-filter: blur(10px);
 }
 
-nav {
+header nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,11 +163,19 @@ a {
 
 /* CV button exception */
 
-nav ul .btn {
+header nav ul .btn {
     display: inline-block;
     width: auto;
     padding: 0.4rem 1rem;
 }
+
+header nav ul.is-open .btn {
+    display: inline-block;
+    width: auto;
+    padding: 0.4rem 1rem;
+    margin-right: 1rem;
+}
+
 
 /* Hamburger menu styles - visible on mobile */
 
@@ -182,18 +192,35 @@ nav ul .btn {
 
 /* Menu hidden by default on mobile */
 
-nav ul {
+header nav ul {
     display: none;
 }
 
-nav ul a {
+header nav ul.is-open {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--bg-dark-translucent);
+    border: 1px solid var(--bg-card-border);
+    border-radius: 0 0 0.75rem 0.75rem;
+    backdrop-filter: blur(10px);
+}
+
+header nav ul a {
     display: block;
     padding: 0.5rem 1rem;
     color: var(--text-muted);
     transition: color 0.3s ease;
 }
 
-nav ul a:hover {
+header nav ul a:hover {
     color: var(--accent-cyan);
 }
 
@@ -429,11 +456,11 @@ footer {
         display: none;
     }
 
-    nav {
+    header nav {
         padding: 1.25rem 2rem;
     }
 
-    nav ul {
+    header nav ul {
         position: static;
         display: flex;
         flex-direction: row;
