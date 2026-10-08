@@ -374,6 +374,17 @@ h1 {
     margin-right: auto;
 }
 
+.project-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.project-badges img {
+    height: 20px;
+}
+
 /* Tech stack section styles */
 
 .stack-grid {

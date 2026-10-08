@@ -52,7 +52,7 @@
                 <div class="terminal-card linux-term">
                     <div class="terminal-header">
                         <div class="terminal-title">
-                            <span class="terminal-icon">❯_</span> Terminal: daniel@linux-pc: ~/projects/resto-reserve
+                            <span class="terminal-icon">❯_</span> Terminal: daniel@linux-pc: ~/projects/restoreserve-api
                         </div>
                         <div class="terminal-controls">
                             <span class="control minimize">—</span>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="terminal-body">
-                        <pre><code><span class="prompt-user">daniel@linux-pc</span>:<span class="prompt-location">~/projects/resto-reserve</span>$ <span class="command">./mvnw spring-boot:run</span>
+                        <pre><code><span class="prompt-user">daniel@linux-pc</span>:<span class="prompt-location">~/projects/restoreserve-api</span>$ <span class="command">./mvnw spring-boot:run</span>
 
 <span class="term-cyan">  .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -69,12 +69,12 @@
  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/</span>
-<span class="term-green"> :: Spring Boot :: </span>              <span class="term-muted">(v3.2.5)</span>
+<span class="term-green"> :: Spring Boot :: </span>              <span class="term-muted">(v3.5.14)</span>
 
-<span class="term-muted">2026-09-24T10:13:00.124Z  INFO 4092 --- [main] c.d.p.RestoReserveApplication : Starting RestoReserveApplication...</span>
-<span class="term-muted">2026-09-24T10:13:01.850Z  INFO 4092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)</span>
-<span class="term-green">2026-09-24T10:13:02.110Z  INFO 4092 --- [main] c.d.p.RestoReserveApplication : Started RestoReserveApplication in 2.34 seconds (JVM running for 2.8)</span>
-<span class="prompt-user">daniel@linux-pc</span>:<span class="prompt-location">~/projects/resto-reserve</span>$ <span class="command"># Servidor listo en http://localhost:8080</span>_</code></pre>
+<span class="term-muted">2026-10-08T10:13:00.124Z  INFO 4092 --- [main] c.p.r.RestoreserveApplication : Starting RestoreserveApplication...</span>
+<span class="term-muted">2026-10-08T10:13:01.850Z  INFO 4092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)</span>
+<span class="term-green">2026-10-08T10:13:02.110Z  INFO 4092 --- [main] c.p.r.RestoreserveApplication : Started RestoreserveApplication in 2.34 seconds (JVM running for 2.8)</span>
+<span class="prompt-user">daniel@linux-pc</span>:<span class="prompt-location">~/projects/restoreserve-api</span>$ <span class="command"># Servidor listo en http://localhost:8080</span>_</code></pre>
                     </div>
                 </div>
             </div>
@@ -89,10 +89,11 @@
                         <p class="project-description">API REST desarrollada con Java y Spring Boot para la gestión de 
                             mesas y reservas en restaurantes.<br>
                             Implementa autenticación y autorización mediante JWT y Spring Security, gestión de usuarios 
-                            y roles, validación de datos, reglas de negocio para reservas y manejo global de excepciones.<br> 
+                            y roles, validación de datos, reglas de negocio para reservas y manejo global de excepciones.<br>
                             El proyecto está estructurado siguiendo una arquitectura por capas (Controller, Service, Repository) 
-                            y utiliza Spring Data JPA, H2, Maven y OpenAPI/Swagger. Incluye además pruebas automatizadas 
-                            con JUnit 5 y Mockito.</p>
+                            y utiliza Spring Data JPA con H2 (perfil por defecto) y PostgreSQL sobre Docker (perfil postgres), 
+                            Maven, OpenAPI/Swagger y CI con GitHub Actions. Incluye 24 pruebas automatizadas con JUnit 5, 
+                            Mockito y MockMvc.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">Spring Boot</span>
@@ -100,12 +101,26 @@
                             <span class="tech-tag">JWT</span>
                             <span class="tech-tag">Spring Data JPA</span>
                             <span class="tech-tag">H2</span>
+                            <span class="tech-tag">PostgreSQL</span>
                             <span class="tech-tag">Maven</span>
                             <span class="tech-tag">OpenAPI/Swagger</span>
                             <span class="tech-tag">JUnit 5</span>
                             <span class="tech-tag">Mockito</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">GitHub Actions</span>
                         </div>
-                        <a href="https://github.com/cloudxdam/restoreserve-api.git" target="_blank" class="btn">Ver código en GitHub</a>                
+                        <div class="project-badges">
+                            <a href="https://github.com/cloudxdam/restoreserve-api/actions/workflows/ci.yml" target="_blank" rel="noopener">
+                                <img src="https://github.com/cloudxdam/restoreserve-api/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI status">
+                            </a>
+                            <a href="https://github.com/cloudxdam/restoreserve-api/releases" target="_blank" rel="noopener">
+                                <img src="https://img.shields.io/github/v/release/cloudxdam/restoreserve-api" alt="Latest release">
+                            </a>
+                            <a href="https://github.com/cloudxdam/restoreserve-api/blob/main/LICENSE" target="_blank" rel="noopener">
+                                <img src="https://img.shields.io/github/license/cloudxdam/restoreserve-api" alt="License">
+                            </a>
+                        </div>
+                        <a href="https://github.com/cloudxdam/restoreserve-api" target="_blank" class="btn">Ver código en GitHub</a>                
                     </div>
                     <!-- FishingCoinditions -->
                     <div class="project-card">
@@ -131,7 +146,7 @@
                             <span class="tech-tag">REST APIs</span>
                             <span class="tech-tag">JUnit</span>
                         </div>
-                        <a href="https://github.com/cloudxdam/fishingconditions.git" target="_blank" class="btn">Ver código en GitHub</a>
+                        <a href="https://github.com/cloudxdam/fishingconditions" target="_blank" class="btn">Ver código en GitHub</a>
                     </div>                    
                     <!-- QubeCore --> 
                     <div class="project-card">
@@ -171,7 +186,7 @@
                                 <span class="tech-tag">Spring Data JPA</span>
                                 <span class="tech-tag">Maven</span>
                             </div>
-                            <a href="https://github.com/cloudxdam/library-api.git" target="_blank" class="btn">Ver código en GitHub</a> 
+                            <a href="https://github.com/cloudxdam/library-api" target="_blank" class="btn">Ver código en GitHub</a> 
                     </div>
                 </div>
             </div>
