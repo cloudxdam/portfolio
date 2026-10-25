@@ -224,6 +224,23 @@ header nav ul a:hover {
     color: var(--accent-cyan);
 }
 
+/* Language switcher */
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.lang-switcher a {
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+}
+
+.lang-switcher a[aria-current="page"] {
+    color: var(--accent-cyan);
+}
+
 /* Hero section styles */
 
 .hero-section {
